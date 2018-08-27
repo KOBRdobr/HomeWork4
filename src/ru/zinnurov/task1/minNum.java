@@ -21,20 +21,19 @@ public class minNum {
         int k = 0; //счетчик
         System.out.println("Введите 4 числа для поиска минимального.");
 
-        while (k !=4) {
-            for (int i = 0; i < num.length; i++) {
-                if (in.hasNextInt()) {
-                    num[i] = in.nextInt(); //Ввод чисел
-                    k++;
-                }
-                else {
-                    in.next();
-                    System.out.println("Введите числа!");
-                    break;
-                }
+        while (k != 4) {
 
+            if (in.hasNextInt()) {
+                num[k] = in.nextInt(); //Ввод чисел
+                k++;
+            } else {
+                in.next();
+                System.out.println("Введите числа!");
+                break;
             }
+
         }
+
 
         min = min(num); //Вызов метода в котором реализован поиск минимального числа
 
