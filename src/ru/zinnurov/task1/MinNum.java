@@ -2,7 +2,7 @@ package ru.zinnurov.task1;
 
 import java.util.Scanner;
 
-public class minNum {
+public class MinNum {
     public static int min(int[] num) {
 
         int min = num[0];
@@ -10,7 +10,6 @@ public class minNum {
         for(int i = 0; i < num.length; i++) {
             if (min > num[i]) min = num[i];
         }
-
         return min;
     }
     public static void main(String[] args) {
@@ -22,7 +21,6 @@ public class minNum {
         System.out.println("Введите 4 числа для поиска минимального.");
 
         while (k != 4) {
-
             if (in.hasNextInt()) {
                 num[k] = in.nextInt(); //Ввод чисел
                 k++;
@@ -31,12 +29,8 @@ public class minNum {
                 System.out.println("Введите числа!");
                 break;
             }
-
         }
-
-
         min = min(num); //Вызов метода в котором реализован поиск минимального числа
-
         System.out.println("Минимальное число: " + min);
 
     }

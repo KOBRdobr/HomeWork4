@@ -2,7 +2,7 @@ package ru.zinnurov.task2;
 
 import java.util.Scanner;
 
-public class whatNumber {
+public class WhatNumber {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int number;
